@@ -314,7 +314,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           ></script>
       append_to_sidebar:
         - | # 目录插件，如果看不懂就不改
-          <aside style="overflow: scroll scroll;max-height:100vh;" id="toc">
+          <aside style="overflow: scroll scroll;max-height:90vh;" id="toc">
             目录
           </aside>
           <script
