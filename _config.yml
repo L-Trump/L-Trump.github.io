@@ -98,7 +98,8 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           async="async"
           src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
           onload='
-            if (screen.width > screen.height)
+            //if (screen.width > screen.height)
+            if (true)
             {
               let pio_container = document.createElement("div");
               pio_container.classList.add("pio-container");
