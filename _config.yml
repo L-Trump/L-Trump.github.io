@@ -244,7 +244,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           }
         </style>
       - | # PlaceHolder底色
-        <!--<style type="text/css">
+        <style type="text/css">
           input::-webkit-input-placeholder{ /*WebKit browsers*/
             color: #C3D9E1;
           }
@@ -254,7 +254,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           input::-ms-input-placeholder{ /*Internet Explorer*/ 
             color: #C3D9E1;
           }
-        </style>-->
+        </style>
     sidebar: # 此配置项下是一些关于侧边栏的配置
       disable: false # 是否不显示sidebar
       avatar: # 侧边栏显示的头像
@@ -309,11 +309,11 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         - | # APlayer
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
           <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
           <meting-js
             server="netease"
             type="playlist"
-            list-folded="true"
+            list-folded="false"
             id="64885528">
           </meting-js>
         - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
