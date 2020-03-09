@@ -11,9 +11,9 @@
 
 <!-- slide vertical=true -->
 
-<h4><font color=white>- E-mail:<strong><a href="mailto:yinghaochi@163.com" style="Color: #FFFFFF">yinghaochi@163.com</a></strong></font></h4>
+<h4><font color=white>- E-mail: <strong><a href="mailto:yinghaochi@163.com" style="Color: #FFFFFF">yinghaochi@163.com</a></strong></font></h4>
 <h4><font color=white>- QQ: 171905101</font></h4>
 
 <!-- slide -->
 
-<h2><font color=white>祝观赏愉快</font></h2>
+<h1><font color=white>祝观赏愉快</font></h1>
