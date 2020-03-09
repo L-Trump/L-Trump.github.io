@@ -121,9 +121,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
               pio_canvas.width = "600";
               pio_canvas.height = "800";
               if (screen.width < screen.height){
-                pio_canvas.style.width = "7rem";
-                pio_canvas.width = "300";
-                pio_canvas.height = "400";
+                pio_canvas.style.width = "10rem";
               }
               pio_container.insertAdjacentElement("beforeend", pio_canvas);
               let pio = new Paul_Pio({
