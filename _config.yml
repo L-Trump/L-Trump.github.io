@@ -29,6 +29,11 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     marginwidth="0"
     marginheight="0"
   ></iframe>-->
+  <meting-js
+    server="netease"
+    type="playlist"
+    id="60198">
+  </meting-js>
 url: https://blog.xqh.ma # 你的域名，例如https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -69,6 +74,10 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@ac85a3115c094b3e6cb92cc41771e98b443f6c5d/public/css/poole.min.css,gh/poole/lanyon@ac85a3115c094b3e6cb92cc41771e98b443f6c5d/public/css/lanyon.min.css"
         />
+      - | # 增加APlayer音乐播放器
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
       - | #对于lanyon侧边栏按钮的一些补丁，Hide the sidebar checkbox that we toggle with `.sidebar-toggle`；建议不要改
         <style>
           .sidebar-checkbox {
