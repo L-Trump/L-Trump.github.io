@@ -173,8 +173,8 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             background-size: 100vw auto;
             background-position: center top;
             background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-image: url(https://i.loli.net/2020/03/09/gWezSkNsfdUiwLQ.jpg);
+            background-attachment: fixed;
+            background-image: url(https://i.loli.net/2020/03/09/N8YqZsa3zIUkfbQ.jpg);
           }
           @media (min-aspect-ratio: 2400/1850) {
             .wrap {
