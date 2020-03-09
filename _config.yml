@@ -117,7 +117,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
               pio_container.insertAdjacentElement("beforeend", pio_canvas);
               let pio = new Paul_Pio({
                 "mode": "fixed",
-                "hidden": false,
+                "hidden": true,
                 "content": {
                   "welcome": ["欢迎来到小站"],
                   "touch": ["你这个绅士！", "别碰我！"],
