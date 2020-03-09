@@ -363,7 +363,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         - | # Copyright声明
           <div>
             <i class="fas fa-copyright fa-fw"></i>
-            2017-2020 WuK
+            2017-2020 LTrump
           </div>
         # - |  觉得我的主题好用的话，让更多的人知道它吧！
           # <div>
