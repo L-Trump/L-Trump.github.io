@@ -170,15 +170,22 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           .wrap {
             min-height: 100vh;
             display: inline-block;
-            background-size: 100vw auto;
+          }
+          body:before {
+            content: ' ';
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             background-position: center top;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            position: fixed;
+            background-size: 100vw auto;
             background-image: url(https://i.loli.net/2020/03/09/N8YqZsa3zIUkfbQ.jpg);
           }
           @media (min-aspect-ratio: 2400/1850) {
-            .wrap {
+            body:before {
               background-image: url(https://i.loli.net/2020/03/09/IlZhpOU2VJjbAko.png);
             }
           }
