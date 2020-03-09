@@ -244,7 +244,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           }
         </style>
       - | # PlaceHolder底色
-        <style type="text/css">
+        <!--<style type="text/css">
           input::-webkit-input-placeholder{ /*WebKit browsers*/
             color: #C3D9E1;
           }
@@ -254,7 +254,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           input::-ms-input-placeholder{ /*Internet Explorer*/ 
             color: #C3D9E1;
           }
-        </style>
+        </style>-->
     sidebar: # 此配置项下是一些关于侧边栏的配置
       disable: false # 是否不显示sidebar
       avatar: # 侧边栏显示的头像
