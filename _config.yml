@@ -146,6 +146,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
                   }]
                 },
                 "model": [
+                  "https:\/\/cdn.jsdelivr.net/gh/ZhangZisu/Live2D-Asuna/static/live2d/asuna/asuna_01/asuna_01.model.json",
                   "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
                   "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
                   "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
