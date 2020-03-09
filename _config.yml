@@ -96,9 +96,9 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         />
         <style>
           .div-transp{
-            filter:alpha(Opacity=80);
-            -moz-opacity: 0.8;
-            opacity: 0.8;
+            filter:alpha(Opacity=70);
+            -moz-opacity: 0.7;
+            opacity: 0.7;
           }
         </style>
         <script
@@ -121,6 +121,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
               pio_canvas.width = "600";
               pio_canvas.height = "800";
               if (screen.width < screen.height){
+                pio_canvas.style.width = "7rem";
                 pio_canvas.width = "300";
                 pio_canvas.height = "400";
               }
@@ -441,7 +442,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             padding-top: 1rem;
             padding-bottom: 1rem;
             box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.8);
             animation: animationAppear 2s;
           }
           @keyframes animationAppear {
