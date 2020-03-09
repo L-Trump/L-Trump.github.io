@@ -1,6 +1,6 @@
 <h1><font color=white>LTrump</font></h1>
 
-<h4><font color=white>欢迎访问我的个人主页！下面向你介绍一下我自己吧~</font></h4>
+<h4><font color=white>欢迎访问我的个人主页！<br>下面向你介绍一下我自己吧~</font></h4>
 
 <!-- slide -->
 
