@@ -302,7 +302,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           <div>
             <meting-js
               server="netease"
-              type="list"
+              type="playlist"
               list-folded="true"
               theme="#68cac7"
               id="60198">
