@@ -1,20 +1,20 @@
 <h1><font color=white>LTrump</font></h1>
 
-欢迎访问我的个人主页！下面向你介绍一下我自己吧~
+<h4><font color=white>欢迎访问我的个人主页！下面向你介绍一下我自己吧~</font></h4>
 
 <!-- slide -->
 
-## 我的一些联系方式
+<h2><font color=white>我的一些联系方式</font></h2>
 
-- School: **Xiaoshi High Scool Ningbo, China**
-- Site: **<https://blog.xqh.ma>**
+- <h4><font color=white>School: <strong>Xiaoshi High Scool Ningbo, China</strong></font></h4>
+- <h4><font color=white>Site: <strong><a href="https://blog.xqh.ma">https://blog.xqh.ma</a></strong></font></h4>
 
 <!-- slide vertical=true -->
 
-- E-mail:
-  - **[yinghaochi@163.com](mailto:yinghaochi@163.com)**
-- QQ: **171905101**
+- <h4><font color=white>E-mail:</font></h4>
+  - <h4><font color=white><strong><a href="mailto:yinghaochi@163.com">yinghaochi@163.com</a></strong></font></h4>
+- <h4><font color=white>QQ: <strong>171905101</strong></font></h4>
 
 <!-- slide -->
 
-## 祝观赏愉快
+<h2><font color=white>祝观赏愉快</font></h2>
