@@ -310,14 +310,12 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
           <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-          <div>
-            <meting-js
-              server="netease"
-              type="playlist"
-              list-folded="true"
-              id="64885528">
-            </meting-js>
-          </div>
+          <meting-js
+            server="netease"
+            type="playlist"
+            list-folded="true"
+            id="64885528">
+          </meting-js>
         - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
           <div>
             <i class="fas fa-cog fa-spin fa-fw"></i>
