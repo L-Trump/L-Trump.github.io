@@ -307,13 +307,13 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             onload="htmlContents('#toc', {listType: 'o', filter: function(arr) {return !arr.matches('.masthead-title')}})"
           ></script>
         - | # APlayer
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+          <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
           <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
           <meting-js
             auto="https://music.163.com/#/playlist?id=64885528"
             list-folded="true">
-          </meting-js>
+          </meting-js>-->
         - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
           <div>
             <i class="fas fa-cog fa-spin fa-fw"></i>
