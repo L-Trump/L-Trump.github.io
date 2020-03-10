@@ -189,7 +189,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             left: 0;
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: 100vw auto;
+            background-size: cover;
             background-image: url(https://i.loli.net/2020/03/09/N8YqZsa3zIUkfbQ.jpg);
           }
           @media (min-aspect-ratio: 2400/1850) {
