@@ -57,12 +57,12 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
       - | # 网站小图标，可换成你自己的图片，改href中的部分即可
         <link
           rel="apple-touch-icon-precomposed"
-          href="https://gravatar.loli.net/avatar/d64d905dd645599dee07b47a9acfd8a5?s=320"
+          href="https://xqhma.oss-cn-hangzhou.aliyuncs.com/gravatar.jpg?x-oss-process=style/640px"
         />
         <link
           rel="shortcut
           icon"
-          href="https://gravatar.loli.net/avatar/d64d905dd645599dee07b47a9acfd8a5?s=32"
+          href="https://xqhma.oss-cn-hangzhou.aliyuncs.com/gravatar.jpg?x-oss-process=style/32px"
         />
       - | # 来自lanyon的页面样式，不要改
         <link
@@ -190,11 +190,11 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url(https://i.loli.net/2020/03/09/N8YqZsa3zIUkfbQ.jpg);
+            background-image: url(https://xqhma.oss-cn-hangzhou.aliyuncs.com/lpld.jpg);
           }
           @media (min-aspect-ratio: 2400/1850) {
             body:before {
-              background-image: url(https://i.loli.net/2020/03/09/IlZhpOU2VJjbAko.png);
+              background-image: url(https://xqhma.oss-cn-hangzhou.aliyuncs.com/Alice-Back.png);
             }
           }
         </style>
@@ -275,7 +275,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
       disable: false # 是否不显示sidebar
       avatar: # 侧边栏显示的头像
         enable: true
-        img: https://gravatar.loli.net/avatar/d64d905dd645599dee07b47a9acfd8a5?s=320 # 头像的地址
+        img: https://xqhma.oss-cn-hangzhou.aliyuncs.com/gravatar.jpg?x-oss-process=style/640px # 头像的地址
       nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
         - title: '<i class="fas fa-home fa-fw"></i> 首页'
           href: /
@@ -322,14 +322,14 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             src='https://cdn.jsdelivr.net/npm/html-contents/html-contents.min.js'
             onload="htmlContents('#toc', {listType: 'o', filter: function(arr) {return !arr.matches('.masthead-title')}})"
           ></script>
-        - | # APlayer
-          <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-          <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-          <meting-js
-            auto="https://music.163.com/#/playlist?id=64885528"
-            list-folded="true">
-          </meting-js>-->
+        # - |  APlayer
+          # <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+          # <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+          # <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+          # <meting-js
+            # auto="https://music.163.com/#/playlist?id=64885528"
+            # list-folded="true">
+          # </meting-js>-->
         - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
           <div>
             <i class="fas fa-cog fa-spin fa-fw"></i>
