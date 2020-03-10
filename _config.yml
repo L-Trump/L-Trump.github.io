@@ -129,7 +129,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
                 "hidden": false,
                 "content": {
                   "welcome": ["欢迎来到小站"],
-                  "touch": ["你这个绅士！", "别碰我！"],
+                  "touch": ["喂，你在干什么！", "别碰我！"],
                   "link": ["https://blog.xqh.ma"],
                   "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                   "custom": [{
