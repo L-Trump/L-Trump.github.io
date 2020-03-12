@@ -169,10 +169,20 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
               });'
         ></script>
       - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js https使用https://zz.bdstatic.com/linksubmit/push.js
-        <script
-          src='https://zz.bdstatic.com/linksubmit/push.js'
-          defer="defer"
-        ></script>
+        <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+        </script>
       - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在/assets/image/background.jpg，那就改成url(/assets/image/background.jpg)
         <style>
           .wrap {
