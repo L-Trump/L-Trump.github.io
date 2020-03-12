@@ -219,4 +219,4 @@ scoop update
 
 ### 常用软件推荐
 
-[Scoop上的软件推荐](https://blog.xqh.ma/_posts/2020-03-11-Scoop%E4%B8%8A%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/)
+[Scoop上的软件推荐](/_posts/2020-03-11-Scoop%E4%B8%8A%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/)
