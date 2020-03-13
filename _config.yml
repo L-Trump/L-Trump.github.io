@@ -130,7 +130,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
                 "content": {
                   "welcome": ["欢迎来到小站"],
                   "touch": ["喂，你在干什么！", "别碰我！"],
-                  "link": ["https://blog.xqh.ma"],
+                  "link": ["/about"],
                   "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                   "custom": [{
                     "selector": "a",
@@ -295,6 +295,8 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           href: /tags/
         - title: '<i class="fas fa-archive fa-fw"></i> 归档'
           href: /archive/
+        - title: '<i class="fas fa-info fa-fw"></i> 关于'
+          href: /about/
         # - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
           # href: /merger/
       simple_jekyll_search: # 侧边栏的全站搜索
@@ -451,7 +453,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             padding-bottom: 1rem;
             box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.1);
             background-color: rgba(255, 255, 255, 0.8);
-            animation: animationAppear 2s;
+            animation: animationAppear 1s;
           }
           @keyframes animationAppear {
             0%,
@@ -626,8 +628,22 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
     append_before: |
       <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/combine/npm/reveal.js/css/reveal.min.css,npm/reveal.js/css/theme/serif.min.css"
+        href="https://cdn.jsdelivr.net/combine/npm/reveal.js/css/reveal.min.css,npm/reveal.js/css/theme/white.min.css"
       />
+      <style>
+        .slides,
+        .slide-background,
+        .backgrounds{
+          animation: animationAppear 1s;
+        }
+        @keyframes animationAppear {
+          0%,
+          33% {
+            opacity: 0;
+          }
+          100% {}
+        }
+      </style>
       <style>
         .sidebar {
           line-height: 1.5;
@@ -658,6 +674,17 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           ]
           });
         "></script>
+      <style>
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4,
+        .reveal h5,
+        .reveal h6,
+        .reveal {
+          font-family: Menlo, Monaco, "Courier New", Microsoft JhengHei, monospace;
+        }
+      </style>
   page404:
     append_before:
       - | # 腾讯公益
@@ -668,7 +695,81 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           homePageUrl='/'
           homePageName='回到我的主页'
         ></script>
-
+  about: # 用于生成ppt的模板，看不懂的话可以不用配置
+    append_to_section_tag:
+      - key: data-markdown
+      - key: data-separator # 水平展示页分隔符
+        value: <!-- slide -->
+      - key: data-separator-vertical # 垂直展示页分隔符
+        value: <!-- slide vertical=true -->
+      - key: data-background-color
+        value: rgba(255,255,255,0.4)
+    append_before: |
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/combine/npm/reveal.js/css/reveal.min.css,npm/reveal.js/css/theme/serif.min.css"
+      />
+      <style>
+        .slides,
+        .slide-background,
+        .backgrounds{
+          animation: animationAppear 1s;
+        }
+        @keyframes animationAppear {
+          0%,
+          33% {
+            opacity: 0;
+          }
+          100% {}
+        }
+      </style>
+      <style>
+        .sidebar {
+          line-height: 1.5;
+        }
+        .reveal .slides {
+          text-align: left;
+        }
+      </style>
+      <script
+        defer="defer"
+        src="https://cdn.jsdelivr.net/npm/reveal.js/js/reveal.min.js"
+        onload="
+        document.getElementsByClassName('wrap')[0].classList.add('reveal');
+        let path = 'https:\/\/cdn.jsdelivr.net/npm/reveal.js/';
+        Reveal.initialize({
+          height: '100%',
+          hash: true,
+          mouseWheel: true,
+          navigationMode: 'linear',
+          //parallaxBackgroundImage: 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAD8D+JaQAA3AA/uVqAAA=',//这是一张纯白图
+          dependencies: [
+              { src: path+'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: path+'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: path+'plugin/highlight/highlight.js', async: true },
+              { src: path+'plugin/zoom-js/zoom.js', async: true },
+              { src: path+'plugin/notes/notes.js', async: true },
+              { src: path+'plugin/math/math.js', async: true }
+          ]
+          });
+      "></script>
+      <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4,
+        .reveal h5,
+        .reveal h6,
+        .reveal {
+          font-family: Menlo, Monaco, "Courier New", Microsoft JhengHei, monospace;
+        }
+      </style>
 # githubpage上支持的插件见<https://pages.github.com/versions/>
 plugins: # <https://jekyllrb.com/docs/plugins/>
   - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
