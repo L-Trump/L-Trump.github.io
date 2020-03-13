@@ -630,6 +630,10 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/combine/npm/reveal.js/css/reveal.min.css,npm/reveal.js/css/theme/white.min.css"
       />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@ac85a3115c094b3e6cb92cc41771e98b443f6c5d/public/css/poole.min.css,gh/poole/lanyon@ac85a3115c094b3e6cb92cc41771e98b443f6c5d/public/css/lanyon.min.css"
+      />
       <style>
         .slides,
         .slide-background,
