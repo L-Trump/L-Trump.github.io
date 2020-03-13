@@ -71,66 +71,62 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 键入Y或者A后回车即可，接下来执行命令：
 
-```
+```powershell
 iwr -useb get.scoop.sh | iex
 ```
 
 如果出现下载错误请挂上代理，如果由于上一次安装失败导致出现已安装提示无法继续的情况，请手动删除Scoop的安装目录，默认为`C:\User\你的用户名\Scoop`。
 
-等待绿色的成功提示出现，Scoop就已安装完毕了，可以 键入`scoop help`查看帮助菜单。
+等待绿色的成功提示出现，Scoop就已安装完毕了。
+
+### 利用aria2加速Scoop下载
 
 ## Scoop的使用
 
 使用其实和其余的包管理器大同小异
 
+### 查看帮助
+
+```powershell
+scoop help
+```
+
+![help.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/help.gif)
+
+### 更新scoop及软件源
+
+```powershell
+scoop update
+```
+
+![udpate.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/udpate.gif)
+
+**注意：update操作依赖于git，所以需要先安装git**
+
 ### 安装软件
 
-首先先查找下看看有哪些软件，以git为例：
-
-```
-scoop search git
-```
-
-会出现类似下列信息：
+首先先查找下看看有哪些软件，以wget为例：
 
 ```powershell
-'main' bucket:
-    git-annex (8.20200226)
-    git-chglog (0.9.1)
-    git-crypt (0.6.0-701fb8e)
-    git-filter-repo (2.25.0)
-    git-interactive-rebase-tool (1.2.1)
-    git-istage (0.2.61)
-    git-lfs (2.10.0)
-    git-sizer (1.3.0)
-    git-tfs (0.30)
-    git-town (7.3.0)
-    git-up (1.6.1)
-    git-with-openssh (2.25.1.windows.1)
-    git (2.25.1.windows.1)
-    gitea (1.11.2)
-    gitignore (0.2018.07.25)
-    gitkube (0.3.0)
-    gitlab-runner (12.8.0)
-    gitomatic (0.2)
-    gitversion (5.1.3)
-    llvm (9.0.0) --> includes 'git-clang-format'
-    mingit-busybox (2.25.1.windows.1)
-    mingit (2.25.1.windows.1)
-    psgithub (2017.01.22)
-    psutils (0.2020.02.27) --> includes 'gitignore.ps1'
+scoop search wget
 ```
 
-可以看到其中有git的包名，于是我们直接执行：
+会出现下列信息：
+
+![search.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/search.gif)
+
+可以看到其中有wget的包名，于是我们直接执行：
 
 ```powershell
-scoop install git
+scoop install wget
 ```
+
+![install.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/install.gif)
 
 就完成安装了。这样的安装方式默认是仅当前用户使用的，如果需要全局安装，加上开关-g即可：
 
 ```powershell
-scoop install git -g
+scoop install wget -g
 ```
 
 ### 查看已安装软件
@@ -139,21 +135,17 @@ scoop install git -g
 scoop list
 ```
 
-### 更新软件及Scoop
-
-```powershell
-scoop update
-```
-
-**注意：update操作依赖于git，所以需要先安装git**
+![list.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/list.gif)
 
 ### 卸载软件/Scoop
 
-如卸载git
+如卸载wget
 
 ```powershell
-scoop uninstall git
+scoop uninstall wget
 ```
+
+![uninstall.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/uninstall.gif)
 
 如果需要卸载Scoop本身，可直接执行
 
@@ -161,13 +153,27 @@ scoop uninstall git
 scoop uninstall scoop
 ```
 
+### 更新软件
+
+```powershell
+scoop update vim
+```
+
+这样就可以更新特定软件了，如果要更新全部软件则可以 
+
+```powershell
+scoop update *
+```
+
 ### 查看软件信息
 
-可查看特定软件的版本、网站、License、配置文件、可执行文件、环境变量等信息，如git：
+可查看特定软件的版本、网站、License、配置文件、可执行文件、环境变量等信息，如vim：
 
 ```powershell
 scoop info git
 ```
+
+![info.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/info.gif)
 
 ### 添加Bucket（软件源）
 
@@ -204,7 +210,7 @@ scoop bucket add versions
 scoop update
 ```
 
-当然，你也可以在网上寻找第三方源并添加（[这里](https://github.com/rasa/scoop-directory/blob/master/by-apps.md)）：
+当然，你也可以在网上寻找第三方源并添加（[Scoop软件源排名](https://github.com/rasa/scoop-directory/blob/master/by-stars.md)）：
 
 ```powershell
 scoop bucket add Ash258 'https://github.com/Ash258/Scoop-Ash258.git'
@@ -212,6 +218,12 @@ scoop update
 ```
 
 需要注意的是，**添加Bucket后请*务必*执行一遍scoop update**。
+
+### 移除Bucket
+
+```powershell
+scoop bucket rm extras
+```
 
 ### 自建Bucket与维护
 
