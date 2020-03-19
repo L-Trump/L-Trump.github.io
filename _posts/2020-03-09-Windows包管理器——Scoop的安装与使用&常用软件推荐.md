@@ -210,10 +210,10 @@ scoop bucket add versions
 scoop update
 ```
 
-当然，你也可以在网上寻找第三方源并添加（[Scoop软件源排名](https://github.com/rasa/scoop-directory/blob/master/by-stars.md)）：
+当然，你也可以在网上寻找第三方源并添加，如我的破解软件源（[Scoop软件源排名](https://github.com/rasa/scoop-directory/blob/master/by-stars.md)）：
 
 ```powershell
-scoop bucket add Ash258 'https://github.com/Ash258/Scoop-Ash258.git'
+scoop bucket add raresoft 'https://github.com/l-trump/scoop-raresoft'
 scoop update
 ```
 
@@ -222,12 +222,16 @@ scoop update
 ### 移除Bucket
 
 ```powershell
-scoop bucket rm extras
+scoop bucket rm raresoft
 ```
 
 ### 自建Bucket与维护
 
-*我不会，暂时也没这个需求，有需要了再加吧*
+请自行查看Scoop的[Wiki](https://github.com/lukesampson/scoop/wiki)
+
+推荐下我自己的仓库，里面全是好东西哦***\(手动滑稽\)***：
+
+[RareSoftware](https://github.com/l-trump/scoop-raresoft)
 
 ### 常用软件推荐
 

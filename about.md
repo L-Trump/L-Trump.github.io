@@ -2,41 +2,41 @@
 layout: about
 title: 关于我
 ---
-## 关于本站<br>
+## 关于本站
 
-### 本站采用静态博客架构<br>
+### 本站采用静态博客架构
 
-### 基于jekyll+Github page<br>
+### 基于jekyll+Github page
 
 ### 原因：***穷***
 
 <!-- slide vertical=true -->
 
-### 主题采用**[WuK](https://jekyll-theme-wuk.wu-kan.cn/)**修改而来<br>
+### 主题采用**[WuK](https://jekyll-theme-wuk.wu-kan.cn/)**修改而来
 
 ### 感谢大佬精美的制作
 
 <!-- slide vertical=true -->
 
-### 为了改善访问体验<br>
+### 为了改善访问体验
 
-### 图床采用阿里云的OSS<br>
+### 图床采用阿里云的OSS
 
 ### js和css则采用jsdelivr的免费CDN
 
 <!-- slide -->
 
-### 搭建这个站点纯属出于个人的兴趣爱好，无其他目的<br>
+### 搭建这个站点纯属出于个人的兴趣爱好，无其他目的
 
-### 如果文章中有不正确或者待改进之处，欢迎在留言区中指出。<br>
+### 如果文章中有不正确或者待改进之处，欢迎在留言区中指出。
 
 ### ***转载请注明出处***
 
 <!-- slide -->
 
-## 关于我<br>
+## 关于我
 
-### 下面向你介绍一下我自己吧~<br>
+### 下面向你介绍一下我自己吧~
 
 ### User Name: LTrump<br>
 
