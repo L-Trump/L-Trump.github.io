@@ -55,7 +55,7 @@ $env:HTTP_PROXY="http://127.0.0.1:1080"
 $env:HTTPS_PROXY="http://127.0.0.1:1080"
 ```
 
-和原先的规则一样，代理只对当前窗口生效，每个需要代理的Powershell窗口都需要键入这两行
+需要注意的是，代理只对当前窗口生效，每个需要代理的Powershell窗口都需要键入这两行
 
 ### 安装
 
@@ -93,6 +93,28 @@ scoop help
 
 ![help.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/help.gif)
 
+### 为Scoop设置代理
+
+Scoop的软件源是基于Git实现的，而大部分的软件源都挂在Github上，如果不用代理访问的话可能会非常慢，而挂代理有如下几种方法
+
+- **使用系统代理+环境变量（临时）**
+
+  系统代理直接在设置中操作就行，环境变量见[***关于代理***](/_posts/2020-03-09-Windows包管理器-Scoop的安装与使用&常用软件推荐/#关于代理)
+
+- **使用Scoop的设置**
+
+  这个操作是重新打开窗口也会生效的，当然只对scoop生效：
+  
+  ```powershell
+  scoop config proxy username:password@host:port //用户名密码可省略
+  如： scoop config proxy 192.168.2.110:1080
+  ```
+  
+  删除代理：
+  
+  ```powershell
+  scoop config rm proxy
+  ```
 ### 更新scoop及软件源
 
 ```powershell
