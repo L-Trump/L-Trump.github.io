@@ -129,7 +129,7 @@ Onedrive有很多的挂载形式
 
 - 标识：oda
 - 内容：
-  - 完整：OneDrive路径->应用ID|应用机钥|回调地址|refresh_token
+  - 完整：OneDrive路径->应用ID\|应用机钥\|回调地址\|refresh_token
   - 指定目录向导：OneDrive路径
   - 向导模式：/
 - 示例：oda:/
