@@ -313,7 +313,7 @@ Nginx
   proxy_no_cache $http_range $http_if_range;
 ```   
 如果使用上传功能，请调整 nginx 上传文件大小限制。   
-```
+```ini
   client_max_body_size 8000m;
 ```   
 Caddy   
