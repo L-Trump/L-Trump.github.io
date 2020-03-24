@@ -571,7 +571,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
       <br/>-->
       <i class="fab fa-creative-commons-by fa-fw"></i>
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">CC BY 4.0</a>（除特别声明或转载文章外）<br/>
-      <i class="fab fa-list-ol fa-fw></i><p>打开侧边栏查看快速查看目录哦~~</p>
+      <i class="fab fa-list-ol fa-fw"></i>打开侧边栏查看快速查看目录哦~~
   tags:
     alert: <i class="fas fa-tag"></i> # 在标签页的每个标签前面显示一个图标
     count: true # 统计每个标签下文章的数量
