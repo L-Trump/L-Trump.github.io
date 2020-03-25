@@ -54,8 +54,6 @@ title: 关于我
 
 ## 我的一些联系方式
 
-- School: Xiaoshi High Scool Ningbo, China
-
 - Site: **[https://blog.xqh.ma](https://blog.xqh.ma)**
 
 <!-- slide vertical=true -->
