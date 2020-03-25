@@ -79,8 +79,6 @@ iwr -useb get.scoop.sh | iex
 
 等待绿色的成功提示出现，Scoop就已安装完毕了。
 
-### 利用aria2加速Scoop下载
-
 ## Scoop的使用
 
 使用其实和其余的包管理器大同小异
@@ -115,7 +113,9 @@ Scoop的软件源是基于Git实现的，而大部分的软件源都挂在Github
   ```powershell
   scoop config rm proxy
   ```
-### 更新scoop及软件源
+### 更新Scoop及软件列表
+
+虽然Scoop有时会自动执行，但还是建议在安装应用前习惯性地执行这个命令，可以保证软件列表不是过时的。
 
 ```powershell
 scoop update
@@ -175,6 +175,14 @@ scoop uninstall wget
 scoop uninstall scoop
 ```
 
+### 查看软件更新
+
+用来查看是不是有可以更新的软件：
+
+```powershell
+scoop status
+```
+
 ### 更新软件
 
 ```powershell
@@ -192,7 +200,7 @@ scoop update *
 可查看特定软件的版本、网站、License、配置文件、可执行文件、环境变量等信息，如vim：
 
 ```powershell
-scoop info git
+scoop info vim
 ```
 
 ![info.gif](https://xqhma.oss-cn-hangzhou.aliyuncs.com/image/info.gif)
@@ -245,6 +253,29 @@ scoop update
 
 ```powershell
 scoop bucket rm raresoft
+```
+
+### 利用aria2加速Scoop下载
+
+如果你经常安装体积较大的软件，那么建议配置aria2下载，但用默认比较稳定，自行取舍吧。
+
+开启：
+
+```powershell
+scoop install aria2 //安装aria2
+scoop config aria2-max-connection-per-server 16 //设置16线程下载
+scoop config aria2-split 16 //设置16线程下载分块
+scoop config aria2-min-split-size 1M //设置每个分块的最小体积
+scoop config aria2-enabled true //启用aira2下载，默认安装好后就是启用的
+```
+
+线程数上限为16，如果需要更大的并行线程数，请自行编译修改限制
+
+关闭：
+
+```powershell
+scoop config aria2-enabled false //临时关闭
+scoop uninstall aria2 //卸载aria2
 ```
 
 ### 自建Bucket与维护
