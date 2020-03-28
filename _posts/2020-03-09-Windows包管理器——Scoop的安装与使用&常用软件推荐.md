@@ -6,6 +6,8 @@ tags:
   - Scoop
 ---
 
+## 2020-3-28: 汉化版已制作完成！见[Scoop-CHS](https://github.com/L-Trump/Scoop-CHS)
+
 ## 前言
 
 用过Linux的同学对包管理器的概念一定不陌生，无论是yum，apt还是pacman都是极好用的包管理器，绝大部分的软件以及其所需的环境变量都能一条命令搞定，相对来说，windows中软件的安装就要繁琐许多。所幸，得益于Win10引进的Powershell，属于Windows的包管理器——Scoop，它来了。
@@ -276,6 +278,23 @@ scoop config aria2-enabled true //启用aira2下载，默认安装好后就是�
 ```powershell
 scoop config aria2-enabled false //临时关闭
 scoop uninstall aria2 //卸载aria2
+```
+
+### 清除缓存
+
+Scoop是有下载缓存的，查看下载缓存：
+
+```powershell
+scoop cache
+```
+删除下载缓存：
+
+```
+scoop cache rm 应用名
+
+或者删除全部缓存：
+
+scoop cache rm *
 ```
 
 ### 自建Bucket与维护
