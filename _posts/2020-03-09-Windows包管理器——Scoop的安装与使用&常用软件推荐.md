@@ -75,6 +75,8 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 ```powershell
 iwr -useb get.scoop.sh | iex
+#中文版使用：
+iwr -useb https://raw.githubusercontent.com/L-Trump/Scoop-CHS/master/bin/install.ps1 | iex
 ```
 
 如果出现下载错误请挂上代理，如果由于上一次安装失败导致出现已安装提示无法继续的情况，请手动删除Scoop的安装目录，默认为`C:\User\你的用户名\Scoop`。
@@ -264,11 +266,11 @@ scoop bucket rm raresoft
 开启：
 
 ```powershell
-scoop install aria2 //安装aria2
-scoop config aria2-max-connection-per-server 16 //设置16线程下载
-scoop config aria2-split 16 //设置16线程下载分块
-scoop config aria2-min-split-size 1M //设置每个分块的最小体积
-scoop config aria2-enabled true //启用aira2下载，默认安装好后就是启用的
+scoop install aria2 #安装aria2
+scoop config aria2-max-connection-per-server 16 #设置16线程下载
+scoop config aria2-split 16 #设置16线程下载分块
+scoop config aria2-min-split-size 1M #设置每个分块的最小体积
+scoop config aria2-enabled true #启用aira2下载，默认安装好后就是启用的
 ```
 
 线程数上限为16，如果需要更大的并行线程数，请自行编译修改限制
@@ -276,8 +278,8 @@ scoop config aria2-enabled true //启用aira2下载，默认安装好后就是�
 关闭：
 
 ```powershell
-scoop config aria2-enabled false //临时关闭
-scoop uninstall aria2 //卸载aria2
+scoop config aria2-enabled false #临时关闭
+scoop uninstall aria2 #卸载aria2
 ```
 
 ### 清除缓存
@@ -292,9 +294,19 @@ scoop cache
 ```
 scoop cache rm 应用名
 
-或者删除全部缓存：
+# 或者删除全部缓存：
 
 scoop cache rm *
+```
+
+### 清除旧版本应用
+
+在Scoop中，当一个应用被更新以后，其旧版本其实并不会被删除，我们可以通过以下命令删除：
+
+```powershell
+scoop cleanup 应用名
+# 删除全部旧版本应用：
+scoop cleanup *
 ```
 
 ### 自建Bucket与维护
