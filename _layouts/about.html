@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{{ site.jekyll-theme-WuK.about.append_before }}
+{{ site.jekyll-theme-WuK.about.prepend}}
 <div class="slidescon">
 <div class="slides">
   <section {% for node in site.jekyll-theme-WuK.about.append_to_section_tag %}{{ node.key }}{% if node.value %}='{{ node.value|escape }}'{% endif %} {% endfor %}>
