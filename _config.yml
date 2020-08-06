@@ -747,6 +747,67 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 plugins: [ RevealMarkdown ]
               });
             "></script>
+        about: # 展示页的配置可跳过，详见<https://revealjs.com/>
+          append_to_section_tag:
+            - key: data-markdown
+            - key: data-separator # 水平展示页分隔符
+              value: <!-- slide -->
+            - key: data-separator-vertical # 垂直展示页分隔符
+              value: <!-- slide vertical=true -->
+            - key: data-background-color
+              value: "White"
+          prepend: |
+            <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.0.2/dist/reveal.min.css,npm/reveal.js@4.0.2/dist/theme/serif.min.css"
+            />
+            <style>
+              .slides,
+              .slide-background,
+              .backgrounds{
+                animation: animationAppear 1s;
+              }
+              @keyframes animationAppear {
+                0%,
+                33% {
+                  opacity: 0;
+                }
+                100% {}
+              }
+            </style>
+            <style>
+              .sidebar {
+                line-height: 1.5;
+              }
+              .reveal .slides {
+                text-align: left;
+              }
+            </style>
+            <style>
+              .reveal h1,
+              .reveal h2,
+              .reveal h3,
+              .reveal h4,
+              .reveal h5,
+              .reveal h6,
+              .reveal {
+                font-family: PingFang SC, Menlo, Monaco, "Courier New", Microsoft JhengHei, monospace;
+              }
+            </style>
+          append: |
+            <script
+              async="async"
+              src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.0.2/dist/reveal.min.js,npm/reveal.js@4.0.2/plugin/markdown/markdown.min.js"
+              onload="
+              document.getElementsByClassName('wrap')[0].classList.add('reveal');
+              Reveal.initialize({
+                height: '100%',
+                hash: true,
+                mouseWheel: true,
+                navigationMode: 'linear',
+                plugins: [ RevealMarkdown ]
+              });
+            "></script>
         page404:
           prepend:
             - | # 腾讯公益
