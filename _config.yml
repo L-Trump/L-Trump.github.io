@@ -754,8 +754,6 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               value: <!-- slide -->
             - key: data-separator-vertical # 垂直展示页分隔符
               value: <!-- slide vertical=true -->
-            - key: data-background-color
-              value: "White"
           prepend: |
             <link
               rel="stylesheet"
@@ -783,6 +781,28 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 text-align: left;
               }
             </style>
+            <script
+              defer="defer"
+              src="https://cdn.jsdelivr.net/npm/reveal.js/js/reveal.min.js"
+              onload="
+              document.getElementsByClassName('wrap')[0].classList.add('reveal');
+              let path = 'https:\/\/cdn.jsdelivr.net/npm/reveal.js/';
+              Reveal.initialize({
+                height: '100%',
+                hash: true,
+                mouseWheel: true,
+                navigationMode: 'linear',
+                //parallaxBackgroundImage: 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAD8D+JaQAA3AA/uVqAAA=',//这是一张纯白图
+                dependencies: [
+                    { src: path+'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: path+'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: path+'plugin/highlight/highlight.js', async: true },
+                    { src: path+'plugin/zoom-js/zoom.js', async: true },
+                    { src: path+'plugin/notes/notes.js', async: true },
+                    { src: path+'plugin/math/math.js', async: true }
+                ]
+              });
+            "></script>
             <style>
               .reveal h1,
               .reveal h2,
