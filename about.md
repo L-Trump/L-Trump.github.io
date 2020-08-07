@@ -1,5 +1,15 @@
 ---
-layout: about
+layout: home
+jekyll-theme-WuK:
+  home: # 展示页的配置可跳过，详见<https://revealjs.com/>
+    append_to_section_tag:
+      - key: data-markdown
+      - key: data-separator # 水平展示页分隔符
+        value: <!-- slide -->
+      - key: data-separator-vertical # 垂直展示页分隔符
+        value: <!-- slide vertical=true -->
+      - key: data-background-color
+        value: rgba(255,255,255,0.4)
 title: 关于我
 ---
 ## 关于本站
